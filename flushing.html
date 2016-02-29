@@ -104,7 +104,7 @@
                     <h2>Offices Around the Corner</h2>
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
-                            <a href="#" class="showmap" data-lat="45.768878" data-lon="-70.836155"><img src="assets/uploads/rockville-centre.jpg" alt=""></a>
+                            <a href="http://smilist-demo.squarespace.com/rockville-centre" class="showmap" data-lat="45.768878" data-lon="-70.836155"><img src="assets/uploads/rockville-centre.jpg" alt=""></a>
                             <div>
                                 <h3><a href="#" class="showmap" data-lat="40.651911" data-lon="-73.636208">Rockville Centre</a></h3>
                                 <span>71 Lincoln Avenue Rockville Centre, NY 11570</span>
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                            <a href="#" class="showmap" data-lat="50.768878" data-lon="-100.836155"><img src="assets/uploads/wantagh.jpg" alt=""></a>
+                            <a href="http://smilist-demo.squarespace.com/wantagh" class="showmap" data-lat="50.768878" data-lon="-100.836155"><img src="assets/uploads/wantagh.jpg" alt=""></a>
                             <div>
                                 <h3><a href="#" class="showmap" data-lat="40.693505" data-lon="-73.510201">Wantagh</a></h3>
                                 <span>3299 Cherrywood Drive Wantagh, NY 11793</span>
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                            <a href="#" class="showmap" data-lat="40.741096" data-lon="-73.920802"><img src="assets/uploads/woodside.jpg" alt=""></a>
+                            <a href="http://smilist-demo.squarespace.com/woodside" class="showmap" data-lat="40.741096" data-lon="-73.920802"><img src="assets/uploads/woodside.jpg" alt=""></a>
                             <div>
                                 <h3><a href="#" class="showmap" data-lat="40.768878" data-lon="-73.836155">Woodside</a></h3>
                                 <span>47-05 44th St Suite A2 Woodside, NY 11377</span>
@@ -195,19 +195,5 @@
                 var $lat = 40.768878;
                 var $lon = -73.836155;
                 mapDisplay($lat,$lon);
-
-                jQuery('.showmap').click(function(e){
-                    e.preventDefault();
-                    var $this = jQuery(this);
-                    var $lat1 = $this.attr('data-lat');
-                    var $lon1 = $this.attr('data-lon');
-                    mapDisplay($lat1,$lon1);
-
-                    $mapdetail = $this.parent('.col-md-4').find('.map-detail').html();
-                    jQuery('#map-detail').html($mapdetail);                    
-                    jQuery("html,body").clearQueue().animate({
-                        scrollTop:jQuery('#main').offset().top
-                    },1800,"swing");
-                });
             });
         </script>    
